@@ -1,0 +1,23 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "Финансовый дневник",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backside360/axisDiary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/backside360/axisDiary/issues"
+  },
+  "homepage": "https://github.com/backside360/axisDiary#readme",
+  "devDependencies": {
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0"
+  }
+}
