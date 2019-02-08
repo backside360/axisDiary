@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -17,7 +21,7 @@ header {
 }
 
 .start-nav {
-  width: 1280px;
+  width: 1800px;
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -28,34 +32,33 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 nav a {
   padding: 30px 11px 29px;
+  color: #272727;
 }
-.container {
+.start-section {
   height: 960px;
   background-image: url(/src/1920.png);
-  font-family: "Libre Baskerville", sans-serif;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-}
 
-.c-1 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  color: #fff;
   align-items: center;
-  width: 900px;
-  margin: auto;
 }
 
-.c-1 h1 {
-  font-size: 40pt;
+.start-section h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 60pt;
+  font-weight: 400;
 }
 
 .btn-primary {
-  background-color: transparent;
+  background-color: #fc5f45;
   text-decoration: none;
   padding: 16px 40px;
   color: black;
@@ -63,13 +66,6 @@ nav a {
   border-radius: 30px;
   border-color: #fc5f45;
   cursor: pointer;
-}
-
-.btn-primary:hover {
-  color: #fff;
-  background-color: #fc5f45;
-  transition: 1s;
-  border-radius: 30px;
 }
 
 .items {
@@ -83,17 +79,29 @@ nav a {
 .items p {
   padding-top: 48px;
   text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 18pt;
+  font-weight: 500;
 }
 
-.item-1 p {
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #3aa281;
 }
 
 .item-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #b27cf5;
 }
 
 .item-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #feb960;
 }
 
@@ -119,16 +127,21 @@ nav a {
   border-bottom: 3px solid #fc5f45;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .about-text h1 {
   font-size: 50pt;
   font-family: "Libre Baskerville", "sans-serif";
+  font-weight: 700;
 }
 
 .about-text p {
   font-family: "Poppins", sans-serif;
-  font-size: 15pt;
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
 }
 
 .our-focus {
@@ -144,6 +157,18 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 80px;
+}
+
+.header-focus h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 50pt;
+}
+
+.header-focus p {
+  font-size: 15pt;
+  color: #616161;
+  font-family: "Poppins", sans-serif;
 }
 
 .focus-icons {
@@ -151,6 +176,14 @@ nav a {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 80px;
+}
+
+.focus-icons h3 {
+  font-weight: 500;
+}
+
+.focus-icons p {
+  line-height: 25px;
 }
 
 .f-icon-1 {
@@ -229,13 +262,12 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 325px;
-  margin-top: 140px;
+  padding-top: 80px;
 }
 
 .port-header h1 {
   font-family: "Libre Baskerville", sans-serif;
-  font-size: 50pt;
+  font-size: 45pt;
 }
 
 .port-header p {
@@ -265,8 +297,12 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 325px;
-  margin-top: 140px;
+  padding-top: 80px;
+}
+
+.team-header h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 45pt;
 }
 
 .team-members {
@@ -309,6 +345,7 @@ nav a {
   width: 1140px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   display: flex;
+  align-items: center;
   margin-top: 100px;
   margin-left: 100px;
 }
@@ -337,12 +374,14 @@ nav a {
 .member-links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 100px;
+  justify-content: space-between;
+  padding: 10px 0 10px 100px;
   color: #616161;
   font-family: "Poppins 400", sans-serif;
   font-size: 15pt;
-  /*border-left: 1px solid black;*/
+  border-left: 1px solid black;
+  height: 120px;
+  margin-left: 50px;
 }
 
 .results {
@@ -370,6 +409,117 @@ nav a {
   margin-left: -41px;
 }
 
+.work-steps {
+  height: 1720px;
+  background-image: url(./src/05.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.w-steps-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.w-steps-header h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 50pt;
+}
+
+.w-steps-header p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18pt;
+  color: #8b8b8b;
+}
+
+.steps-img {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-steps h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25pt;
+  font-weight: 400;
+}
+
+.proj01 {
+  height: 300px;
+  width: 460px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  margin-top: -1300px;
+  margin-left: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./src/01-wstep.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  border-bottom: 3px solid #fc5f45;
+}
+
+.proj p {
+  line-height: 30px;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+.proj02 {
+  height: 300px;
+  width: 460px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  margin-left: 1100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./src/02-wstep.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  border-bottom: 3px solid #fc5f45;
+}
+
+.proj03 {
+  height: 300px;
+  width: 460px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  margin-left: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./src/03-wstep.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  border-bottom: 3px solid #fc5f45;
+}
+
+.proj04 {
+  height: 300px;
+  width: 460px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  margin-left: 1100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./src/04-wstep.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  border-bottom: 3px solid #fc5f45;
+}
+
 .pricing-table {
   background-color: #f7f7f7;
   background-image: url(/src/06.png);
@@ -382,6 +532,12 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 80px;
+}
+
+.pricing-header h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 50pt;
 }
 
 .pricing-packs {
@@ -394,6 +550,48 @@ nav a {
 .pricing-packs li {
   line-height: 30px;
   list-style: none;
+}
+
+.pack-price1 {
+  background-size: contain;
+  background-image: url(./src/price-green.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 116px;
+  height: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.pack-price2 {
+  background-size: contain;
+  background-image: url(./src/price-orange.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 116px;
+  height: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.pack-price3 {
+  background-size: contain;
+  background-image: url(./src/price-purple.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 116px;
+  height: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
 }
 
 .pack1 {
@@ -502,6 +700,7 @@ nav a {
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .main-text {
@@ -513,9 +712,55 @@ nav a {
   width: 755px;
   height: 300px;
   border-bottom: 3px solid #fc5f45;
+  margin-top: 50px;
+  margin-left: -20px;
 }
 
 .main-text p {
   padding: 40px 0 0 20px;
   line-height: 25px;
+}
+
+.select-us {
+  height: 1050px;
+  width: auto;
+  background-image: url(./src/08.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.select-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.select-header h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 50pt;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.adv1 {
+  display: flex;
+  flex: 1 1 200px;
+  flex-flow: row wrap;
+}
+
+.adv2 {
+  display: flex;
+  flex: 1 1 200px;
+  flex-flow: row wrap;
+}
+
+.adv3 {
+  display: flex;
+  flex: 1 1 300px;
+  flex-flow: row wrap;
 }
