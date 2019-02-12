@@ -61,7 +61,7 @@ nav a {
   background-color: #fc5f45;
   text-decoration: none;
   padding: 16px 40px;
-  color: black;
+  color: #fff;
   width: 180px;
   border-radius: 30px;
   border-color: transparent;
@@ -236,6 +236,8 @@ nav a {
   border-bottom: 3px solid #feb960;
 }
 
+/* Video */
+
 .video {
   width: 1920px;
   height: 500px;
@@ -249,6 +251,8 @@ nav a {
   flex-direction: column;
   align-items: center;
 }
+
+/* Portfolio*/
 
 .portfolio {
   width: 1920px;
@@ -275,14 +279,30 @@ nav a {
   color: #616161;
 }
 
-.projects {
+.projects1 {
   display: flex;
-  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.p-img {
-  flex: 1 0 28%;
+.projects2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
+
+.projects3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+/*.p-img:hover {
+} */
+
+/* Team */
 
 .our-team {
   width: 1920px;
@@ -483,6 +503,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   background-image: url(./src/01-wstep.png);
+  /* background-image: url(./src/line.png); */
   background-repeat: no-repeat;
   background-position: top left;
   border-bottom: 3px solid #fc5f45;
@@ -507,6 +528,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   background-image: url(./src/02-wstep.png);
+  /* background-image: url(./src/line.png); */
   background-repeat: no-repeat;
   background-position: top left;
   border-bottom: 3px solid #fc5f45;
@@ -523,6 +545,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   background-image: url(./src/03-wstep.png);
+  /* background-image: url(./src/line.png); */
   background-repeat: no-repeat;
   background-position: top left;
   border-bottom: 3px solid #fc5f45;
@@ -543,6 +566,8 @@ nav a {
   background-position: top left;
   border-bottom: 3px solid #fc5f45;
 }
+
+/*Pricing*/
 
 .pricing-table {
   background-color: #f7f7f7;
