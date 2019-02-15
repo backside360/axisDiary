@@ -4,7 +4,9 @@
   "description": "Финансовый дневник",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "node-sass -watch style.scss -o style.css",
+    "build-sass": "node-sass style.scss -o style.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/backside360/axisDiary#readme",
   "devDependencies": {
+    "node-sass": "^4.11.0",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^2.1.0"
   }
