@@ -4,9 +4,9 @@
   "description": "Финансовый дневник",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-sass": "node-sass -watch style.scss -o style.css",
-    "build-sass": "node-sass style.scss -o style.css"
+    "build-css": "node-sass style.scss -o ./dist",
+    "watch-css": "npm run build-css && node-sass -w style.scss -o ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
