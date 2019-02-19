@@ -1,6 +1,6 @@
-$main-button-color: #fc5f45;
-
-%header {
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+.header-focus, .port-header, .team-header, .w-steps-header, .pricing-header, .testi-header, .select-header, .blog-header, .in-touch-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,12 +14,12 @@ $main-button-color: #fc5f45;
   padding-top: 80px;
 }
 
-%header-h1 {
+.about-text h1, .header-focus h1, .port-header h1, .team-header h1, .w-steps-header h1, .pricing-header h1, .testi-header h1, .select-header h1, .blog-header h1, .in-touch-header h1 {
   font-size: 50pt;
   font-family: "Libre Baskerville";
 }
 
-%items-start {
+.item-1, .item-2, .item-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,17 +32,17 @@ $main-button-color: #fc5f45;
   align-items: center;
 }
 
-%background-image-position {
+.our-focus, .portfolio, .our-team, .work-steps, .pricing-table, .pack-price1, .pack-price2, .pack-price3, .testimonials, .select-us, .our-blog, .in-touch {
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-%background-image-position-ws {
+.proj01, .proj02, .proj03, .proj04 {
   background-repeat: no-repeat;
   background-position: top left;
 }
 
-%focus-icons {
+.f-icon-1, .f-icon-2, .f-icon-3, .f-icon-4 {
   background-color: #fff;
   height: 350px;
   width: 260px;
@@ -62,7 +62,7 @@ $main-button-color: #fc5f45;
   padding-top: 60px;
 }
 
-%portfolio-projects {
+.projects1, .projects2, .projects3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +75,7 @@ $main-button-color: #fc5f45;
   justify-content: space-evenly;
 }
 
-%team-members {
+.member1, .member2, .member3, .member4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +90,7 @@ $main-button-color: #fc5f45;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
-%metrics {
+.metric-1, .metric-2, .metric-3, .metric-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +103,7 @@ $main-button-color: #fc5f45;
   align-items: center;
 }
 
-%price-pack-header {
+.pack-price1, .pack-price2, .pack-price3 {
   width: 116px;
   height: 116px;
   display: -webkit-box;
@@ -122,7 +122,7 @@ $main-button-color: #fc5f45;
   color: #fff;
 }
 
-%pack-price-content {
+.pack1, .pack2, .pack3 {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   height: 575px;
@@ -138,9 +138,6 @@ $main-button-color: #fc5f45;
   -ms-flex-direction: column;
   flex-direction: column;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
 
 * {
   -webkit-box-sizing: border-box;
@@ -223,7 +220,7 @@ nav a {
 }
 
 .btn-primary {
-  background-color: $main-button-color;
+  background-color: #fc5f45;
   text-decoration: none;
   padding: 16px 40px;
   color: #fff;
@@ -257,17 +254,14 @@ nav a {
 }
 
 .item-1 {
-  @extend %items-start;
   color: #3aa281;
 }
 
 .item-2 {
-  @extend %items-start;
   color: #b27cf5;
 }
 
 .item-3 {
-  @extend %items-start;
   color: #feb960;
 }
 
@@ -312,7 +306,6 @@ nav a {
 }
 
 .about-text h1 {
-  @extend %header-h1;
   font-weight: 700;
 }
 
@@ -325,21 +318,11 @@ nav a {
 }
 
 /* Our Focus */
-
 .our-focus {
   width: 100%;
   height: 820px;
   background-color: #f7f7f7;
   background-image: url(../src/02.png);
-  @extend %background-image-position;
-}
-
-.header-focus {
-  @extend %header;
-}
-
-.header-focus h1 {
-  @extend %header-h1;
 }
 
 .header-focus p {
@@ -371,22 +354,18 @@ nav a {
 }
 
 .f-icon-1 {
-  @extend %focus-icons;
   border-bottom: 3px solid #fc5f45;
 }
 
 .f-icon-2 {
-  @extend %focus-icons;
   border-bottom: 3px solid #38c695;
 }
 
 .f-icon-3 {
-  @extend %focus-icons;
   border-bottom: 3px solid #b27cf5;
 }
 
 .f-icon-4 {
-  @extend %focus-icons;
   border-bottom: 3px solid #feb960;
 }
 
@@ -417,15 +396,6 @@ nav a {
   width: 1920px;
   height: 1386px;
   background-image: url(../src/03.png);
-  @extend %background-image-position;
-}
-
-.port-header {
-  @extend %header;
-}
-
-.port-header h1 {
-  @extend %header-h1;
 }
 
 .port-header p {
@@ -433,17 +403,11 @@ nav a {
   color: #616161;
 }
 
-.projects1 {
-  @extend %portfolio-projects;
-}
-
 .projects2 {
-  @extend %portfolio-projects;
   margin-top: 20px;
 }
 
 .projects3 {
-  @extend %portfolio-projects;
   margin-top: 20px;
 }
 
@@ -454,16 +418,7 @@ nav a {
   width: 1920px;
   height: 1386px;
   background-image: url(../src/04.png);
-  @extend %background-image-position;
   background-color: #f7f7f7;
-}
-
-.team-header {
-  @extend %header;
-}
-
-.team-header h1 {
-  @extend %header-h1;
 }
 
 .team-members {
@@ -481,22 +436,18 @@ nav a {
 
 .member1 {
   border-bottom: 3px solid #fc5f45;
-  @extend %team-members;
 }
 
 .member2 {
   border-bottom: 3px solid #38c695;
-  @extend %team-members;
 }
 
 .member3 {
   border-bottom: 3px solid #b27cf5;
-  @extend %team-members;
 }
 
 .member4 {
   border-bottom: 3px solid #feb960;
-  @extend %team-members;
 }
 
 .about-members {
@@ -568,7 +519,6 @@ nav a {
 }
 
 /* Results */
-
 .results {
   height: 464px;
   background-image: url(../src/coffee.png);
@@ -597,35 +547,10 @@ nav a {
   color: #9e9ea2;
 }
 
-.metric-1 {
-  @extend %metrics;
-}
-
-.metric-2 {
-  @extend %metrics;
-}
-
-.metric-3 {
-  @extend %metrics;
-}
-
-.metric-4 {
-  @extend %metrics;
-}
-
 /* Work Steps */
 .work-steps {
   height: 1720px;
   background-image: url(../src/05.png);
-  @extend %background-image-position;
-}
-
-.w-steps-header {
-  @extend %header;
-}
-
-.w-steps-header h1 {
-  @extend %header-h1;
 }
 
 .w-steps-header p {
@@ -682,7 +607,6 @@ nav a {
   -ms-flex-align: center;
   align-items: center;
   background-image: url(../src/01-wstep.png), url(../src/line.png);
-  @extend %background-image-position-ws;
   border-bottom: 3px solid #fc5f45;
 }
 
@@ -705,7 +629,6 @@ nav a {
   -ms-flex-align: center;
   align-items: center;
   background-image: url(../src/02-wstep.png), url(../src/line.png);
-  @extend %background-image-position-ws;
   border-bottom: 3px solid #fc5f45;
 }
 
@@ -728,7 +651,6 @@ nav a {
   -ms-flex-align: center;
   align-items: center;
   background-image: url(../src/03-wstep.png), url(../src/line.png);
-  @extend %background-image-position-ws;
   border-bottom: 3px solid #fc5f45;
 }
 
@@ -751,7 +673,6 @@ nav a {
   -ms-flex-align: center;
   align-items: center;
   background-image: url(../src/04-wstep.png), url(../src/line.png);
-  @extend %background-image-position-ws;
   border-bottom: 3px solid #fc5f45;
 }
 
@@ -759,16 +680,7 @@ nav a {
 .pricing-table {
   background-color: #f7f7f7;
   background-image: url(../src/06.png);
-  @extend %background-image-position;
   height: 1050px;
-}
-
-.pricing-header {
-  @extend %header;
-}
-
-.pricing-header h1 {
-  @extend %header-h1;
 }
 
 .pricing-packs {
@@ -792,37 +704,28 @@ nav a {
 .pack-price1 {
   background-size: contain;
   background-image: url(../src/price-green.png);
-  @extend %background-image-position;
-  @extend %price-pack-header;
 }
 
 .pack-price2 {
   background-size: contain;
   background-image: url(../src/price-orange.png);
-  @extend %background-image-position;
-  @extend %price-pack-header;
 }
 
 .pack-price3 {
   background-size: contain;
   background-image: url(../src/price-purple.png);
-  @extend %background-image-position;
-  @extend %price-pack-header;
 }
 
 .pack1 {
   border-top: 3px solid #38c695;
-  @extend %pack-price-content;
 }
 
 .pack2 {
   border-top: 3px solid #fc5f45;
-  @extend %pack-price-content;
 }
 
 .pack3 {
   border-top: 3px solid #b27cf5;
-  @extend %pack-price-content;
 }
 
 .btn-pack1 {
@@ -880,21 +783,11 @@ nav a {
 }
 
 /* Testimonial */
-
 .testimonials {
   background-color: #3f4049;
   background-image: url(../src/07.png);
-  @extend %background-image-position;
   color: #fff;
   height: 875px;
-}
-
-.testi-header {
-  @extend %header;
-}
-
-.testi-header h1 {
-  @extend %header-h1;
 }
 
 .testi-header p {
@@ -933,20 +826,10 @@ nav a {
 }
 
 /* WHY SELECT US */
-
 .select-us {
   height: 1050px;
   width: auto;
   background-image: url(../src/08.png);
-  @extend %background-image-position;
-}
-
-.select-header {
-  @extend %header;
-}
-
-.select-header h1 {
-  @extend %header-h1;
 }
 
 .advantages {
@@ -1061,16 +944,7 @@ nav a {
 .our-blog {
   background-color: #f7f7f7;
   background-image: url(../src/09.png);
-  @extend %background-image-position;
   height: 1150px;
-}
-
-.blog-header {
-  @extend %header;
-}
-
-.blog-header h1 {
-  @extend %header-h1;
 }
 
 .blog-header p {
@@ -1301,7 +1175,7 @@ nav a {
   color: #fff;
   width: 180px;
   border-radius: 30px;
-  background-color: $main-button-color;
+  background-color: #fc5f45;
   border-color: transparent;
   cursor: pointer;
   padding: 15px;
@@ -1315,16 +1189,10 @@ nav a {
 .in-touch {
   height: 1300px;
   background-image: url(../src/10.png);
-  @extend %background-image-position;
   background-color: #cccccc;
 }
 
-.in-touch-header {
-  @extend %header;
-}
-
 .in-touch-header h1 {
-  @extend %header-h1;
   font-weight: 700;
 }
 
@@ -1370,7 +1238,7 @@ nav a {
   margin-top: 25px;
   color: #fff;
   border-radius: 30px;
-  background-color: $main-button-color;
+  background-color: #fc5f45;
   border-color: transparent;
   cursor: pointer;
   padding: 15px 30px;
