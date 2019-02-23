@@ -1,34 +1,11 @@
-$main-button-color: #fc5f45;
-
-%header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 80px;
-}
-
-%header-h1 {
-  font-size: 50pt;
-  font-family: "Libre Baskerville";
-}
+@import "commons/variables";
+@import "commons/mixins";
+@import "commons/imports";
+@import "components/itemstart";
 
 %items-start {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -48,76 +25,39 @@ $main-button-color: #fc5f45;
   width: 260px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   padding-top: 60px;
 }
 
 %portfolio-projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
 %team-members {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 %metrics {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 %price-pack-header {
   width: 116px;
   height: 116px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   color: #fff;
 }
@@ -127,40 +67,10 @@ $main-button-color: #fc5f45;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   height: 575px;
   width: 363px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
-
-%flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-%flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
 
 * {
   -webkit-box-sizing: border-box;
@@ -185,22 +95,14 @@ header {
 
 .start-nav {
   width: 1800px;
-  @extend %flex-row;
+  @include flex-row;
   margin: auto;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -213,14 +115,10 @@ nav a {
 
 .start-section {
   height: 960px;
-  background-image: url(../src/1920.png);
-  @extend %flex-column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  background-image: url(../src/images/1920.png);
+  @include flex-column;
   justify-content: center;
   color: #fff;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -231,7 +129,7 @@ nav a {
 }
 
 .btn-primary {
-  background-color: $main-button-color;
+  background-color: $main-color;
   text-decoration: none;
   padding: 16px 40px;
   color: #fff;
@@ -242,10 +140,10 @@ nav a {
   outline: none;
 }
 
-.items {
+/*.items {
   margin-top: 50px;
   width: 960px;
-  @extend %flex-row;
+  @include flex-row;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
@@ -259,25 +157,30 @@ nav a {
 }
 
 .item-1 {
-  @extend %items-start;
-  color: #3aa281;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $main-green;
 }
 
 .item-2 {
-  @extend %items-start;
-  color: #b27cf5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $main-purple;
 }
 
 .item-3 {
-  @extend %items-start;
-  color: #feb960;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $main-yellow;
 }
+*/
 
 .about-us {
   height: 1324px;
-  @extend %flex-row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  @include flex-row;
   justify-content: center;
   padding-top: 100px;
 }
@@ -291,18 +194,17 @@ nav a {
   margin-left: -70px;
   margin-top: 80px;
   font-size: 40pt;
-  background-image: url(../src/01.png);
+  background-image: url(../src/images/01.png);
   background-repeat: no-repeat;
   background-position: left top;
   border-bottom: 3px solid #fc5f45;
-  @extend %flex-column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  @include flex-column;
   align-items: center;
 }
 
 .about-text h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
   font-weight: 700;
 }
 
@@ -319,17 +221,21 @@ nav a {
 .our-focus {
   width: 100%;
   height: 820px;
-  background-color: #f7f7f7;
-  background-image: url(../src/02.png);
+  background-color: $background-grey;
+  background-image: url(../src/images/02.png);
   @extend %background-image-position;
 }
 
 .header-focus {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .header-focus h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
 }
 
 .header-focus p {
@@ -339,9 +245,7 @@ nav a {
 }
 
 .focus-icons {
-  @extend %flex-row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
+  @include flex-row;
   justify-content: space-evenly;
   margin-top: 80px;
 }
@@ -356,12 +260,12 @@ nav a {
 
 .f-icon-1 {
   @extend %focus-icons;
-  border-bottom: 3px solid #fc5f45;
+  border-bottom: 3px solid $main-color;
 }
 
 .f-icon-2 {
   @extend %focus-icons;
-  border-bottom: 3px solid #38c695;
+  border-bottom: 3px solid $main-green;
 }
 
 .f-icon-3 {
@@ -378,13 +282,13 @@ nav a {
 .video {
   width: 1920px;
   height: 500px;
-  background-image: url(../src/1920-500.png);
+  background-image: url(../src/images/1920-500.png);
 }
 
 .video-1 {
   color: #fff;
   padding-top: 130px;
-  @extend %flex-column;
+  @include flex-column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -394,16 +298,20 @@ nav a {
 .portfolio {
   width: 1920px;
   height: 1386px;
-  background-image: url(../src/03.png);
+  background-image: url(../src/images/03.png);
   @extend %background-image-position;
 }
 
 .port-header {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .port-header h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
 }
 
 .port-header p {
@@ -431,21 +339,25 @@ nav a {
 .our-team {
   width: 1920px;
   height: 1386px;
-  background-image: url(../src/04.png);
+  background-image: url(../src/images/04.png);
   @extend %background-image-position;
-  background-color: #f7f7f7;
+  background-color: $background-grey;
 }
 
 .team-header {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .team-header h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
 }
 
 .team-members {
-  @extend %flex-row;
+  @include flex-row;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
@@ -487,7 +399,7 @@ nav a {
 }
 
 .about-member {
-  @extend %flex-column;
+  @include flex-column;
 }
 
 .about-member h3 {
@@ -500,7 +412,7 @@ nav a {
 }
 
 .about-img {
-  @extend %flex-row;
+  @include flex-row;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -508,9 +420,7 @@ nav a {
 }
 
 .member-links {
-  @extend %flex-column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  @include flex-column;
   justify-content: space-between;
   padding: 10px 0 10px 100px;
   color: #616161;
@@ -525,13 +435,12 @@ nav a {
 
 .results {
   height: 464px;
-  background-image: url(../src/coffee.png);
+  background-image: url(../src/images/coffee.png);
   background-repeat: no-repeat;
 }
 
 .metrics {
-  @extend %flex-row;
-  -ms-flex-pack: distribute;
+  @include flex-row;
   justify-content: space-around;
   padding-top: 200px;
 }
@@ -564,16 +473,20 @@ nav a {
 /* Work Steps */
 .work-steps {
   height: 1720px;
-  background-image: url(../src/05.png);
+  background-image: url(../src/images/05.png);
   @extend %background-image-position;
 }
 
 .w-steps-header {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .w-steps-header h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
 }
 
 .w-steps-header p {
@@ -584,9 +497,7 @@ nav a {
 
 .steps-img {
   margin-top: 130px;
-  @extend %flex-column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  @include flex-column;
   align-items: center;
 }
 
@@ -613,11 +524,9 @@ nav a {
   margin-top: -1300px;
   margin-left: 300px;
   position: relative;
-  @extend %flex-column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  @include flex-column;
   align-items: center;
-  background-image: url(../src/01-wstep.png), url(../src/line.png);
+  background-image: url(../src/images/01-wstep.png), url(../src/images/line.png);
   @extend %background-image-position-ws;
   border-bottom: 3px solid #fc5f45;
 }
@@ -630,11 +539,9 @@ nav a {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   margin-left: 1100px;
   position: relative;
-  @extend %flex-column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  @include flex-column;
   align-items: center;
-  background-image: url(../src/02-wstep.png), url(../src/line.png);
+  background-image: url(../src/images/02-wstep.png), url(../src/images/line.png);
   @extend %background-image-position-ws;
   border-bottom: 3px solid #fc5f45;
 }
@@ -647,11 +554,9 @@ nav a {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   margin-left: 300px;
   position: relative;
-  @extend %flex-column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  @include flex-column;
   align-items: center;
-  background-image: url(../src/03-wstep.png), url(../src/line.png);
+  background-image: url(../src/images/03-wstep.png), url(../src/images/line.png);
   @extend %background-image-position-ws;
   border-bottom: 3px solid #fc5f45;
 }
@@ -664,11 +569,9 @@ nav a {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   margin-left: 1100px;
   position: relative;
-  @extend %flex-column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  @include flex-column;
   align-items: center;
-  background-image: url(../src/04-wstep.png), url(../src/line.png);
+  background-image: url(../src/images/04-wstep.png), url(../src/images/line.png);
   @extend %background-image-position-ws;
   border-bottom: 3px solid #fc5f45;
 }
@@ -676,22 +579,25 @@ nav a {
 /*Pricing*/
 .pricing-table {
   background-color: #f7f7f7;
-  background-image: url(../src/06.png);
+  background-image: url(../src/images/06.png);
   @extend %background-image-position;
   height: 1050px;
 }
 
 .pricing-header {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .pricing-header h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
 }
 
 .pricing-packs {
-  @extend %flex-row;
-  -ms-flex-pack: distribute;
+  @include flex-row;
   justify-content: space-around;
   margin-top: 85px;
 }
@@ -703,21 +609,21 @@ nav a {
 
 .pack-price1 {
   background-size: contain;
-  background-image: url(../src/price-green.png);
+  background-image: url(../src/images/price-green.png);
   @extend %background-image-position;
   @extend %price-pack-header;
 }
 
 .pack-price2 {
   background-size: contain;
-  background-image: url(../src/price-orange.png);
+  background-image: url(../src/images/price-orange.png);
   @extend %background-image-position;
   @extend %price-pack-header;
 }
 
 .pack-price3 {
   background-size: contain;
-  background-image: url(../src/price-purple.png);
+  background-image: url(../src/images/price-purple.png);
   @extend %background-image-position;
   @extend %price-pack-header;
 }
@@ -769,7 +675,6 @@ nav a {
 .btn-pack2:hover {
   background-color: #fc5f45;
   color: #fff;
-  -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
 
@@ -795,18 +700,22 @@ nav a {
 
 .testimonials {
   background-color: #3f4049;
-  background-image: url(../src/07.png);
+  background-image: url(../src/images/07.png);
   @extend %background-image-position;
   color: #fff;
   height: 875px;
 }
 
 .testi-header {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .testi-header h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
 }
 
 .testi-header p {
@@ -814,16 +723,14 @@ nav a {
 }
 
 .main-content {
-  @extend %flex-row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  @include flex-row;
   justify-content: center;
 }
 
 .main-text {
   background-color: #fff;
   color: #616161;
-  background-image: url(../src/quotes.png);
+  background-image: url(../src/images/quotes.png);
   background-repeat: no-repeat;
   background-position: left top;
   width: 755px;
@@ -843,23 +750,25 @@ nav a {
 .select-us {
   height: 1050px;
   width: auto;
-  background-image: url(../src/08.png);
+  background-image: url(../src/images/08.png);
   @extend %background-image-position;
 }
 
 .select-header {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .select-header h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
 }
 
 .advantages {
   margin-top: 50px;
-  @extend %flex-row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
+  @include flex-row;
   justify-content: space-evenly;
 }
 
@@ -871,19 +780,15 @@ nav a {
 
 .advantages2 {
   margin-top: 40px;
-  @extend %flex-row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
+  @include flex-row;
   justify-content: space-evenly;
 }
 
 .adv-header {
-  @extend %flex-row;
+  @include flex-row;
 }
 
 .adv-header img {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -910,9 +815,7 @@ nav a {
 }
 
 .get-started {
-  @extend %flex-row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  @include flex-row;
   justify-content: center;
   margin-top: 100px;
 }
@@ -925,8 +828,6 @@ nav a {
 }
 
 .get-started button {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
   margin-left: 20px;
   color: #fff;
@@ -942,17 +843,21 @@ nav a {
 /* BLOG */
 .our-blog {
   background-color: #f7f7f7;
-  background-image: url(../src/09.png);
+  background-image: url(../src/images/09.png);
   @extend %background-image-position;
   height: 1150px;
 }
 
 .blog-header {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .blog-header h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
 }
 
 .blog-header p {
@@ -962,14 +867,12 @@ nav a {
 }
 
 .blogs {
-  @extend %flex-row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  @include flex-row;
   justify-content: center;
 }
 
 .blog-main {
-  @extend %flex-column;
+  @include flex-column;
   height: 672px;
   width: 562px;
   color: black;
@@ -979,9 +882,7 @@ nav a {
 }
 
 .blog-main-header {
-  @extend %flex-row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
+  @include flex-row;
   justify-content: flex-start;
   margin-top: -50px;
   padding-left: 35px;
@@ -1026,15 +927,12 @@ nav a {
 }
 
 .side-blog {
-  @extend %flex-column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  @include flex-column;
   align-items: center;
 }
 
 .side-blog-header {
-  @extend %flex-row;
-  -ms-flex-pack: distribute;
+  @include flex-row;
   justify-content: space-around;
 }
 
@@ -1074,7 +972,7 @@ nav a {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   border-bottom: 3px solid #38c695;
-  @extend %flex-column;
+  @include flex-column;
 }
 
 .side-blog1 h5 {
@@ -1094,7 +992,7 @@ nav a {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   border-bottom: 3px solid #b27cf5;
-  @extend %flex-column;
+  @include flex-column;
 }
 
 .side-blog2 h5 {
@@ -1113,7 +1011,7 @@ nav a {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   border-bottom: 3px solid #feb960;
-  @extend %flex-column;
+  @include flex-column;
 }
 
 .side-blog3 h5 {
@@ -1126,7 +1024,7 @@ nav a {
 
 /* Subscribe */
 .subscribe {
-  @extend %flex-column;
+  @include flex-column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1161,7 +1059,7 @@ nav a {
   color: #fff;
   width: 180px;
   border-radius: 30px;
-  background-color: $main-button-color;
+  background-color: $main-color;
   border-color: transparent;
   cursor: pointer;
   padding: 15px;
@@ -1174,22 +1072,26 @@ nav a {
 /* Get in touch */
 .in-touch {
   height: 1300px;
-  background-image: url(../src/10.png);
+  background-image: url(../src/images/10.png);
   @extend %background-image-position;
   background-color: #cccccc;
 }
 
 .in-touch-header {
-  @extend %header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .in-touch-header h1 {
-  @extend %header-h1;
+  font-size: 50pt;
+  font-family: "Libre Baskerville";
   font-weight: 700;
 }
 
 .touch-form {
-  @extend %flex-column;
+  @include flex-column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1224,7 +1126,7 @@ nav a {
   margin-top: 25px;
   color: #fff;
   border-radius: 30px;
-  background-color: $main-button-color;
+  background-color: $main-color;
   border-color: transparent;
   cursor: pointer;
   padding: 15px 30px;
@@ -1239,7 +1141,7 @@ footer {
   height: 225px;
   margin-top: 100px;
   margin-left: 370px;
-  @extend %flex-row;
+  @include flex-row;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
@@ -1255,7 +1157,7 @@ footer {
 }
 
 .f-adress-gl {
-  @extend %flex-column;
+  @include flex-column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1271,7 +1173,7 @@ footer {
 }
 
 .f-adress-uk {
-  @extend %flex-column;
+  @include flex-column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1287,7 +1189,7 @@ footer {
 }
 
 .f-follow {
-  @extend %flex-column;
+  @include flex-column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
