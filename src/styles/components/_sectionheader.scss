@@ -1,0 +1,5 @@
+.header {
+  @include flex-column;
+  align-items: center;
+  padding-top: 80px;
+}

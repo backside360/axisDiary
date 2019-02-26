@@ -4,8 +4,8 @@
   "description": "Финансовый дневник",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass style.scss -o ./dist",
-    "watch-css": "npm run build-css && node-sass -w style.scss -o ./dist",
+    "build-css": "node-sass ./src/styles -o ./dist",
+    "watch-css": "npm run build-css && node-sass -w ./src/styles  -o ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

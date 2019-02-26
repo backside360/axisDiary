@@ -1,0 +1,33 @@
+.items {
+  margin-top: 50px;
+  width: 960px;
+  @include flex-row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.items p {
+  padding-top: 48px;
+  text-transform: uppercase;
+  font-family: $p-font;
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+.item-1 {
+  @include flex-column;
+  align-items: center;
+  color: $main-green;
+}
+
+.item-2 {
+  @include flex-column;
+  align-items: center;
+  color: $main-purple;
+}
+
+.item-3 {
+  @include flex-column;
+  align-items: center;
+  color: $main-yellow;
+}
