@@ -1,0 +1,37 @@
+.advantages {
+  margin-top: 50px;
+  @include flex-row;
+  justify-content: space-evenly;
+}
+
+.advantages p,
+.advantages2 p {
+  color: #616161;
+  line-height: 25px;
+}
+
+.advantages2 {
+  margin-top: 40px;
+  @include flex-row;
+  justify-content: space-evenly;
+}
+
+.adv-header {
+  @include flex-row;
+}
+
+.adv-header img {
+  align-self: center;
+}
+
+.adv-header h5 {
+  padding-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18pt;
+}
+
+.adv1 {
+  height: 180px;
+  width: 350px;
+}
