@@ -1,0 +1,91 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+
+.our-focus {
+  width: 100%;
+  height: 820px;
+  background-color: $G200;
+  background-image: url(../images/02.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.header-focus {
+  @include flex-column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.header-focus h1 {
+  font-size: 50pt;
+  font-family: $header-font;
+}
+
+.header-focus p {
+  font-size: 15pt;
+  color: $B200;
+  font-family: $text-font;
+}
+
+.focus-icons {
+  @include flex-row;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+.focus-icons h3 {
+  font-weight: 500;
+}
+
+.focus-icons p {
+  line-height: 25px;
+}
+
+.f-icon-1 {
+  background-color: $W100;
+  height: 350px;
+  width: 260px;
+  box-shadow: $BXS2;
+  @include flex-column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  border-bottom: 3px solid $R100;
+}
+
+.f-icon-2 {
+  background-color: $W100;
+  height: 350px;
+  width: 260px;
+  box-shadow: $BXS2;
+  @include flex-column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  border-bottom: 3px solid $G100;
+}
+
+.f-icon-3 {
+  background-color: $W100;
+  height: 350px;
+  width: 260px;
+  box-shadow: $BXS2;
+  @include flex-column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  border-bottom: 3px solid $P100;
+}
+
+.f-icon-4 {
+  background-color: $W100;
+  height: 350px;
+  width: 260px;
+  box-shadow: $BXS2;
+  @include flex-column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  border-bottom: 3px solid $Y100;
+}

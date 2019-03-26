@@ -1,3 +1,7 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+
 .blogs {
   @include flex-row;
   justify-content: center;
@@ -22,7 +26,7 @@
 
 .blog-main h5 {
   color: $R100;
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-weight: 500;
   font-size: 12pt;
 }
@@ -30,19 +34,18 @@
 .blog-main-header p {
   padding-left: 20px;
   padding-top: 13px;
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-weight: 400;
   color: $W100;
   font-size: 8pt;
 }
 
 .blog-main-content {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 }
 
 .blog-main-content h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-size: 15pt;
   font-weight: 500;
   padding-left: 35px;
@@ -52,9 +55,9 @@
 .blog-main-content p {
   line-height: 25px;
   padding-left: 35px;
-  color: #616161;
+  color: $B200;
   font-size: 11pt;
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-weight: 400;
 }
 
@@ -69,7 +72,7 @@
 }
 
 .side-blog-header h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-weight: 500;
   font-size: 15pt;
 }
@@ -78,31 +81,30 @@
   padding-right: 220px;
   padding-top: 25px;
   font-size: 10pt;
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-weight: 400;
 }
 
 .side-blog h4 {
   padding-left: 6px;
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-weight: 500;
 }
 
 .side-blog p {
   padding-left: 6px;
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-weight: 400;
   color: #616161;
 }
 
 .side-blog1 {
   background-color: $W100;
-  color: black;
+  color: $B100;
   height: 208px;
   width: 555px;
   margin-bottom: 25px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: $BXS2;
   border-bottom: 3px solid $G100;
   @include flex-column;
 }
@@ -113,4 +115,42 @@
 
 .side-blog1 a {
   color: $G100;
+}
+
+
+.side-blog2 {
+  background-color: $W100;
+  color: black;
+  height: 208px;
+  width: 555px;
+  margin-bottom: 25px;
+  box-shadow: $BXS2;
+  border-bottom: 3px solid $P100;
+  @include flex-column;
+}
+
+.side-blog2 h5 {
+  color: $P100;
+}
+
+.side-blog2 a {
+  color: $P100;
+}
+
+.side-blog3 {
+  background-color: $W100;
+  color: black;
+  height: 206px;
+  width: 555px;
+  box-shadow: $BXS2;
+  border-bottom: 3px solid $Y100;
+  @include flex-column;
+}
+
+.side-blog3 h5 {
+  color: $Y100;
+}
+
+.side-blog3 a {
+  color: $Y100;
 }
