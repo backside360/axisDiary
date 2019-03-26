@@ -1,0 +1,37 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+
+
+
+.portfolio {
+  width: 1920px;
+  height: 1386px;
+  background-image: url(../src/images/03.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.port-header {
+  @include flex-column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.port-header h1 {
+  font-size: 50pt;
+  font-family: $header-font;
+}
+
+.port-header p {
+  font-size: 18pt;
+  color: $B200;
+}
+
+.projects1 .projects2 .projects3 .projects4 {
+  @include flex($direction: row, $justify: space-evenly);
+  margin-top: 20px;
+  /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+}

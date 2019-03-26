@@ -2,10 +2,17 @@
 @import "commons/variables";
 @import "commons/mixins";
 @import "commons/imports";
-@import "components/header/header.scss";
+@import "section/header/header.scss";
 @import "sections/main/main.scss";
+@import "sections/ourBlog/posts.scss";
+@import "sections/ourFocus/focusItem.scss";
+@import "sections/ourPrices/prices.scss";
+@import "sections/ourTeam/teammates.scss";
+@import "sections/portfolio/portfolioItems.scss";
+@import "sections/selectUs/advantagesList.scss";
 
-.main-layout h1 {
+ 
+ .main-layout h1 {
   font-family: "Libre Baskerville", sans-serif;
   font-size: 60pt;
   font-weight: 400;
@@ -214,6 +221,8 @@
 }
 
 /* Portfolio*/
+
+
 .portfolio {
   width: 1920px;
   height: 1386px;
@@ -262,6 +271,8 @@
 /*.p-img:hover {
 } */
 /* Team */
+
+
 .our-team {
   width: 1920px;
   height: 1386px;
@@ -526,6 +537,7 @@
 }
 
 /*Pricing*/
+
 .pricing-table {
   background-color: #f7f7f7;
   background-image: url(../src/images/06.png);

@@ -1,3 +1,7 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+
 .member1 {
   border-bottom: 3px solid $R100;
   @include flex($direction: column, $align: center);

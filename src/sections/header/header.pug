@@ -1,0 +1,19 @@
+-
+  var list = [
+    {link: "About Us", url: '#'},
+    {link: "Our Focus", url: '#'},
+    {link: "Portfolio", url: '#'},
+    {link: "Our Team", url: '#'},
+    {link: "Work Steps", url: '#'},
+    {link: "Pricing", url: '#'},
+    {link: "Testimonial", url: '#'},
+    {link: "Blog", url: '#'},
+    {link: "Contact", url: '#'}
+  ]
+
+header
+  .start-nav
+    img(src='./src/images/Alexis.png', alt='logo')
+    nav.main-nav
+      each item in list
+        a.nav-link(href=item.url)= item.link

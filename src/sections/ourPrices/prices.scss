@@ -1,0 +1,44 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+
+@mixin pricing-packs($url, $color, $className) {
+  .#{$className} {
+    background-size: contain;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 116px;
+    height: 116px;
+    @include flex($direction: column, $align: center, $justify: center);
+    color: $color;
+  }
+
+  .#{$className} p {
+    font-family: $text-font;
+    font-size: 11pt;
+    margin-top: -35px;
+  }
+}
+
+.pricing-packs {
+  @include flex-row;
+  justify-content: space-around;
+  margin-top: 85px;
+
+  @include pricing-packs("../src/images/price-green.png", $W100, "pack1");
+  @include pricing-packs("../src/images/price-orange.png", $Y100, "pack2");
+  @include pricing-packs("../src/images/price-purple.png", $P100, "pack3");
+}
+
+.pricing-packs li {
+  line-height: 30px;
+  list-style: none;
+}
+
+.pricing-packs h4 {
+  font-family: $text-font;
+  font-weight: 400;
+  font-size: 20pt;
+  margin-top: 20px;
+}
