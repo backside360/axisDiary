@@ -1,14 +1,28 @@
+-var list = [
+  {post: "Fixed price projects", url:'./src/images/$sign.png'},
+  {post: "Receive on Time", url:'./src/images/time.png'},
+  {post: "Satisfaction Guaranteed", url:'./src/images/checked.png'}
+]
+
+
+
 section.main-layout
   h1 We design things with love
-  h1 and passion.
+  | and passion.
   button.btn-primary Our Works
   .items
-    .item-1
+    each item in list
+    .items-n img(src=item.url) p = item.post
+    
+    //- классы будут другие (исчезнут item1-2-3?) и нужно менять css?
+
+
+    //- .item-1
       img(src='./src/images/$sign.png' alt='')
       p Fixed price projects
-    .item-2
+    //-.item-2
       img(src='./src/images/time.png' alt='')
       p Receive on Time
-    .item-3
+    //-.item-3
       img(src='./src/images/checked.png' alt='')
-      p Satisfaction Guaranteed
+      p Satisfaction Guaranteed 

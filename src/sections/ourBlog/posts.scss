@@ -11,7 +11,7 @@
   @include flex-column;
   height: 672px;
   width: 562px;
-  color: black;
+  color: $B100;
   background-color: $W100;
   border-bottom: 3px solid $R100;
   margin-right: 20px;
@@ -95,7 +95,7 @@
   padding-left: 6px;
   font-family: $text-font;
   font-weight: 400;
-  color: #616161;
+  color: $B200;
 }
 
 .side-blog1 {
@@ -120,7 +120,7 @@
 
 .side-blog2 {
   background-color: $W100;
-  color: black;
+  color: $B100;
   height: 208px;
   width: 555px;
   margin-bottom: 25px;
@@ -139,7 +139,7 @@
 
 .side-blog3 {
   background-color: $W100;
-  color: black;
+  color: $B100;
   height: 206px;
   width: 555px;
   box-shadow: $BXS2;
