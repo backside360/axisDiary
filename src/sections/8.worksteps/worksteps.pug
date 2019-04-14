@@ -1,0 +1,19 @@
+-
+  var steps  = [
+    { post:'Buyer strategy incubator niche market startup. Entrepreneur nondisclosure agreement MVP traction beta social media investor accelerator', url:'./src/images/556x300.png', posthead:'Project Understanding', className:'proj01' },
+    { post:'Buyer strategy incubator niche market startup. Entrepreneur nondisclosure agreement MVP traction beta social media investor accelerator', url:'./src/images/556x300-green.png', posthead:'Research & Planning', className:'proj02' },
+    { post:'Buyer strategy incubator niche market startup. Entrepreneur nondisclosure agreement MVP traction beta social media investor accelerator', url:'./src/images/556-purple.png', posthead:'Wireframe & Design', className:'proj03' },
+    { post:'Buyer strategy incubator niche market startup. Entrepreneur nondisclosure agreement MVP traction beta social media investor accelerator', url:'./src/images/556-light.png', posthead:'Development', className:'proj04' }
+  ]
+
+section.work-steps
+  .w-steps-header
+    h1 Work Steps.
+    p We understand your requirement and provide quality works
+  .proj
+    each item in steps
+      div(class=`${item.className}`)
+        div
+          h4=item.posthead
+          p=item.post
+      img(src=item.url)

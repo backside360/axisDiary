@@ -1,0 +1,39 @@
+@import "../../commons/variables.scss";
+@import "../../commons/mixins.scss";
+
+.about-us {
+  height: 1324px;
+  @include flex-row;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.about-text {
+  height: 550px;
+  background-color: $W100;
+  width: 650px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  margin-left: -70px;
+  margin-top: 80px;
+  font-size: 40pt;
+  background-image: url(../src/images/01.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 3px solid $R100;
+  @include flex-column;
+  align-items: center;
+}
+
+.about-text h1 {
+  font-size: 50pt;
+  font-family: $header-font;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-family: $text-font;
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}

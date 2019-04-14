@@ -1,0 +1,19 @@
+-
+  var list =[
+    { post: 'Fixed price projects', url:'./src/images/$sign.png', className:'item-1' },
+    { post: 'Receive on Time', url:'./src/images/time.png', className:'item-2' },
+    { post: 'Satisfaction Guaranteed', url:'./src/images/checked.png', className:'item-3' }
+  ]
+
+
+
+section.main-layout
+  h1 We design things with love
+  br
+  | and passion.
+  button.btn-primary Our Works
+  .items
+    each item in list
+      div(class=`${item.className}`) 
+        img(src=item.url) 
+        p=item.post

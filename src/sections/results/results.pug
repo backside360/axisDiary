@@ -1,0 +1,17 @@
+-
+  var results = [
+        { post:'Projects Completed', header:'12,458+', url:'./src/images/graphics.png', urlSm:'./src/images/orbtn.png', className:'metric-1'},
+        { post:'Satisfied Clients', header:'1,796+', url:'./src/images/clients.png', urlSm:'./src/images/grbtn.png', className:'metric-2'},
+        { post:'Positive Feedbacks', header:'1000+', url:'./src/images/heart.png', urlSm:'./src/images/prpbtn.png', className:'metric-3'},
+        { post:'Freebies Released', header:'1,000+', url:'./src/images/gift.png', urlSm:'./src/images/ylwbtn.png', className:'metric-4'}
+  ]
+
+
+section.results
+      .metrics
+        each item in results
+          div(class=`${results.className}`)
+            img(src=results.url)
+            h3=results.header
+            p=results.post
+            img(src=results.urlSm)

@@ -2,9 +2,12 @@
 @import "commons/variables";
 @import "commons/mixins";
 @import "commons/imports";
-@import "section/header/header.scss";
-@import "sections/main/main.scss";
-@import "sections/ourBlog/posts.scss";
+@import "sections/1.header/header.scss";
+@import "sections/2.main/main.scss";
+@import "sections/3.aboutUs/aboutUs.scss";
+@import "sections/4.ourFocus/focusItem.scss";
+@import "sections/5.video/video.scss";
+/*@import "sections/ourBlog/posts.scss";
 @import "sections/ourFocus/focusItem.scss";
 @import "sections/ourPrices/prices.scss";
 @import "sections/ourTeam/teammates.scss";
@@ -106,7 +109,7 @@
 }
 
 /* Our Focus */
-
+/*
 .our-focus {
   width: 100%;
   height: 820px;
@@ -205,6 +208,7 @@
 }
 
 /* Video */
+/*
 .video {
   width: 1920px;
   height: 500px;
@@ -222,7 +226,7 @@
 
 /* Portfolio*/
 
-
+/*
 .portfolio {
   width: 1920px;
   height: 1386px;
@@ -272,7 +276,7 @@
 } */
 /* Team */
 
-
+/*
 .our-team {
   width: 1920px;
   height: 1386px;
@@ -383,7 +387,7 @@
 }
 
 /* Results */
-
+/*
 .results {
   height: 464px;
   background-image: url(../src/images/coffee.png);
@@ -426,6 +430,8 @@
 }
 
 /* Work Steps */
+
+/*
 .work-steps {
   height: 1720px;
   background-image: url(../src/images/05.png);
@@ -537,7 +543,7 @@
 }
 
 /*Pricing*/
-
+/*
 .pricing-table {
   background-color: #f7f7f7;
   background-image: url(../src/images/06.png);
@@ -723,7 +729,7 @@
 }
 
 /* Testimonial */
-
+/*
 .testimonials {
   background-color: #3f4049;
   background-image: url(../src/images/07.png);
@@ -773,7 +779,7 @@
 }
 
 /* WHY SELECT US */
-
+/*
 .select-us {
   height: 1050px;
   width: auto;
@@ -843,7 +849,7 @@
 }
 
 /*    GET STARTED    */
-
+/*
 .get-started {
   @include flex-row;
   justify-content: center;
@@ -871,6 +877,7 @@
 }
 
 /* BLOG */
+/*
 .our-blog {
   background-color: #f7f7f7;
   background-image: url(../src/images/09.png);
@@ -1054,6 +1061,8 @@
 }
 
 /* Subscribe */
+
+/*
 .subscribe {
   @include flex-column;
   -webkit-box-align: center;
@@ -1101,6 +1110,8 @@
 }
 
 /* Get in touch */
+
+/*
 .in-touch {
   height: 1300px;
   background-image: url(../src/images/10.png);
@@ -1167,6 +1178,8 @@
 }
 
 /* Footer */
+
+/*
 footer {
   background-color: #3f4049;
   width: 1136px;
