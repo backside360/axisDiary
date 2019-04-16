@@ -1,0 +1,95 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+.select-us {
+  height: 1050px;
+  width: auto;
+  background-image: url(../src/images/08.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.select-header {
+  @include flex-column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.select-header h1 {
+  font-size: 50pt;
+  font-family: $header-font;
+}
+
+.advantages {
+  margin-top: 50px;
+  @include flex-row;
+  justify-content: space-evenly;
+}
+
+.advantages p,
+.advantages2 p {
+  color: $B200;
+  line-height: 25px;
+}
+
+.advantages2 {
+  margin-top: 40px;
+  @include flex-row;
+  justify-content: space-evenly;
+}
+
+.adv-header {
+  @include flex-row;
+}
+
+.adv-header img {
+  align-self: center;
+}
+
+.adv-header h5 {
+  padding-left: 10px;
+  font-family: $text-font;
+  font-weight: 500;
+  font-size: 18pt;
+}
+
+.adv1 {
+  height: 180px;
+  width: 350px;
+}
+
+.adv2 {
+  height: 180px;
+  width: 350px;
+}
+
+.adv3 {
+  height: 180px;
+  width: 350px;
+}
+
+.get-started {
+  @include flex-row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.get-started h4 {
+  font-family: $text-font;
+  font-size: 25pt;
+  font-weight: 400;
+  color: $B100;
+}
+
+.get-started button {
+  align-self: center;
+  margin-left: 20px;
+  color: $W100;
+  width: 180px;
+  border-radius: 30px;
+  background-color: $R100;
+  border-color: transparent;
+  cursor: pointer;
+  padding: 15px;
+  outline: none;
+}

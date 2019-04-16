@@ -1,0 +1,107 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+.work-steps {
+  height: 1720px;
+  background-image: url(../src/images/05.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.w-steps-header {
+  @include flex-column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.w-steps-header h1 {
+  font-size: 50pt;
+  font-family: $header-font;
+}
+
+.w-steps-header p {
+  font-family: $text-font;
+  font-size: 18pt;
+  color: $G300;
+}
+
+.steps-img {
+  margin-top: 130px;
+  @include flex-column;
+  align-items: center;
+}
+
+.work-steps h4 {
+  font-family: $text-font;
+  font-size: 25pt;
+  font-weight: 400;
+}
+
+.proj p {
+  line-height: 30px;
+  padding-left: 50px;
+  font-family: $text-font;
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+.proj01 {
+  height: 300px;
+  width: 460px;
+  background-color: $W100;
+  box-shadow: $BXS2;
+  /*margin-top: -1300px;*/
+  margin-left: 300px;
+  position: relative;
+  @include flex-column;
+  align-items: center;
+  background-image: url(../src/images/01-wstep.png), url(../src/images/line.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 3px solid $R100;
+}
+
+.proj02 {
+  height: 300px;
+  width: 460px;
+  background-color: $W100;
+  box-shadow: $BXS2;
+  margin-left: 1100px;
+  position: relative;
+  @include flex-column;
+  align-items: center;
+  background-image: url(../src/images/02-wstep.png), url(../src/images/line.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 3px solid $R100;
+}
+
+.proj03 {
+  height: 300px;
+  width: 460px;
+  background-color: $W100;
+  box-shadow: $BXS2;
+  margin-left: 300px;
+  position: relative;
+  @include flex-column;
+  align-items: center;
+  background-image: url(../src/images/03-wstep.png), url(../src/images/line.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 3px solid $R100;
+}
+
+.proj04 {
+  height: 300px;
+  width: 460px;
+  background-color: $W100;
+  box-shadow: $BXS2;
+  margin-left: 1100px;
+  position: relative;
+  @include flex-column;
+  align-items: center;
+  background-image: url(../src/images/04-wstep.png), url(../src/images/line.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 3px solid $R100;
+}

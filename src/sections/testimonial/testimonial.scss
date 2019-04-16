@@ -1,0 +1,49 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+.testimonials {
+  background-color: #3f4049;
+  background-image: url(../src/images/07.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: $W100;
+  height: 875px;
+}
+
+.testi-header {
+  @include flex-column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.testi-header h1 {
+  font-size: 50pt;
+  font-family: $header-font;
+}
+
+.testi-header p {
+  font-size: 18pt;
+}
+
+.main-content {
+  @include flex-row;
+  justify-content: center;
+}
+
+.main-text {
+  background-color: $W100;
+  color: $B200;
+  background-image: url(../src/images/quotes.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: 755px;
+  height: 300px;
+  border-bottom: 3px solid $R100;
+  margin-top: 50px;
+  margin-left: -20px;
+}
+
+.main-text p {
+  padding: 40px 0 0 20px;
+  line-height: 25px;
+}
