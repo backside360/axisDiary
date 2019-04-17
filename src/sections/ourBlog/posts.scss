@@ -1,6 +1,30 @@
 @import "../../commons/variables";
 @import "../../commons/mixins.scss";
 
+.our-blog {
+  background-color: #f7f7f7;
+  background-image: url(../src/images/09.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 1150px;
+}
+
+.blog-header {
+  @include flex-column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.blog-header h1 {
+  font-size: 50pt;
+  font-family: $header-font;
+}
+
+.blog-header p {
+  font-family: $text-font;
+  font-size: 18pt;
+  color: $G300;
+}
 
 .blogs {
   @include flex-row;
@@ -105,18 +129,14 @@
   width: 555px;
   margin-bottom: 25px;
   box-shadow: $BXS2;
-  border-bottom: 3px solid $G100;
+  border-bottom: 3px solid $G400;
   @include flex-column;
 }
 
-.side-blog1 h5 {
-  color: $G100;
-}
-
+.side-blog1 h5,
 .side-blog1 a {
-  color: $G100;
+  color: $G400;
 }
-
 
 .side-blog2 {
   background-color: $W100;
@@ -129,10 +149,7 @@
   @include flex-column;
 }
 
-.side-blog2 h5 {
-  color: $P100;
-}
-
+.side-blog2 h5,
 .side-blog2 a {
   color: $P100;
 }
@@ -142,15 +159,13 @@
   color: $B100;
   height: 206px;
   width: 555px;
-  box-shadow: $BXS2;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   border-bottom: 3px solid $Y100;
   @include flex-column;
 }
 
-.side-blog3 h5 {
-  color: $Y100;
-}
-
+.side-blog3 h5,
 .side-blog3 a {
   color: $Y100;
 }

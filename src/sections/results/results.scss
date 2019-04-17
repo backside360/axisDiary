@@ -1,0 +1,31 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+.results {
+  height: 464px;
+  background-image: url(../src/images/coffee.png);
+  background-repeat: no-repeat;
+}
+
+.metrics {
+  @include flex-row;
+  justify-content: space-around;
+  padding-top: 200px;
+}
+
+.metrics h3 {
+  color: $W100;
+  font-family: $text-font;
+}
+
+.metrics p {
+  color: #9e9ea2;
+}
+
+.metric-1,
+.metric-2,
+.metric-3,
+.metric-4 {
+  @include flex-column;
+  align-items: center;
+}

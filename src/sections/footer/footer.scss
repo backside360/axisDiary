@@ -1,0 +1,57 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+footer {
+  background-color: #3f4049;
+  width: 1136px;
+  height: 225px;
+  margin-top: 100px;
+  margin-left: 370px;
+  @include flex-row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  border-bottom: 3px solid $W100;
+}
+
+.footer-img {
+  display: flex;
+  align-self: center;
+}
+
+.f-adress-gl {
+  @include flex-column;
+  justify-content: center;
+}
+
+.f-adress-gl h5 {
+  color: $G100;
+}
+
+.f-adress-gl p {
+  color: $W100;
+  line-height: 25px;
+}
+
+.f-adress-uk {
+  @include flex-column;
+  justify-content: center;
+}
+
+.f-adress-uk h5 {
+  color: $P100;
+}
+
+.f-adress-uk p {
+  color: $W100;
+  line-height: 25px;
+}
+
+.f-follow {
+  @include flex-column;
+  justify-content: center;
+}
+
+.f-follow h5 {
+  color: $Y100;
+}

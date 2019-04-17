@@ -1,0 +1,21 @@
+@import "../../commons/variables";
+@import "../../commons/mixins.scss";
+
+.video {
+  width: 1920px;
+  height: 500px;
+  background-image: url(../src/images/1920-500.png);
+}
+
+.video-1 {
+  color: $W100;
+  padding-top: 130px;
+  @include flex-column;
+  align-items: center;
+}
+
+.video-1 h1 {
+  font-family: $text-font;
+  font-size: 30pt;
+  font-weight: 400;
+}
