@@ -8,9 +8,10 @@
     "watch:css": "npm run build:css && node-sass -w ./src  -o ./dist",
     "build:html": "pug src/index.pug --out ./dist",
     "watch:html": "pug src/index.pug --out ./dist --watch --pretty",
-    "images": "cp-cli ./src/images ./dist/src/images",
+    "images": "cp-cli ./src/images ./dist/images",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm-run-all --parallel watch:css watch:html images"
+    "dev": "npm-run-all --parallel watch:css watch:html images",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,10 @@
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
     "stylelint": "^9.10.1",
-    "stylelint-config-recommended": "^2.1.0"
+    "stylelint-config-recommended": "^2.2.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "tar": "^4.4.8"
   }
 }

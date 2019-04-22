@@ -8,8 +8,6 @@ footer {
   margin-top: 100px;
   margin-left: 370px;
   @include flex-row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   border-bottom: 3px solid $W100;
 }
@@ -54,4 +52,8 @@ footer {
 
 .f-follow h5 {
   color: $Y100;
+  padding-bottom: 50px;
+}
+
+.follow-img {
 }

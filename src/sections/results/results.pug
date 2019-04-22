@@ -10,8 +10,8 @@
 section.results
       .metrics
         each item in results
-          div(class=`${results.className}`)
-            img(src=results.url)
-            h3=results.header
-            p=results.post
-            img(src=results.urlSm)
+          div(class=`${item.className}`)
+            img(src=item.url)
+            h3=item.header
+            p=item.post
+            img(src=item.urlSm)

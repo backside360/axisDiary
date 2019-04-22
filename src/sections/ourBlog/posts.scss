@@ -44,6 +44,7 @@
 .blog-main-header {
   @include flex-row;
   justify-content: flex-start;
+  align-items: center;
   margin-top: -50px;
   padding-left: 35px;
 }
@@ -60,7 +61,7 @@
   padding-top: 13px;
   font-family: $text-font;
   font-weight: 400;
-  color: $W100;
+  color: $R100;
   font-size: 8pt;
 }
 
