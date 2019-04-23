@@ -1,0 +1,60 @@
+/*   COLORS       */
+/*      FONT        */
+/*      SHADOWS     */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../src/images/1920.png);
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0; }
+
+.main-layout h1 {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 60pt;
+  font-weight: 400; }
+
+.btn-primary {
+  background-color: #fc5f45;
+  text-decoration: none;
+  padding: 16px 40px;
+  color: #fff;
+  width: 180px;
+  border-radius: 30px;
+  border-color: transparent;
+  cursor: pointer;
+  outline: none; }
+
+.items {
+  margin-top: 50px;
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.items p {
+  padding-top: 48px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 18pt;
+  font-weight: 500; }
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3aa281; }
+
+.item-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b27cf5; }
+
+.item-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #feb960; }

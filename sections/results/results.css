@@ -1,0 +1,31 @@
+/*   COLORS       */
+/*      FONT        */
+/*      SHADOWS     */
+.results {
+  height: 464px;
+  background-image: url(../src/images/coffee.png);
+  background-repeat: no-repeat; }
+
+.metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 200px; }
+
+.metrics h3 {
+  color: #fff;
+  font-family: "Poppins", sans-serif; }
+
+.metrics p {
+  color: #9e9ea2; }
+
+.metrics img {
+  padding-bottom: 10px; }
+
+.metric-1,
+.metric-2,
+.metric-3,
+.metric-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }

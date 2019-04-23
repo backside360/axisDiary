@@ -1,0 +1,50 @@
+/*   COLORS       */
+/*      FONT        */
+/*      SHADOWS     */
+footer {
+  background-color: #3f4049;
+  width: 1136px;
+  height: 225px;
+  margin-top: 100px;
+  margin-left: 370px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: 3px solid #fff; }
+
+.footer-img {
+  display: flex;
+  align-self: center; }
+
+.f-adress-gl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.f-adress-gl h5 {
+  color: #3aa281; }
+
+.f-adress-gl p {
+  color: #fff;
+  line-height: 25px; }
+
+.f-adress-uk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.f-adress-uk h5 {
+  color: #b27cf5; }
+
+.f-adress-uk p {
+  color: #fff;
+  line-height: 25px; }
+
+.f-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.f-follow h5 {
+  color: #feb960;
+  padding-bottom: 50px; }

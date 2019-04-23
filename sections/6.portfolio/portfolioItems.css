@@ -1,0 +1,33 @@
+/*   COLORS       */
+/*      FONT        */
+/*      SHADOWS     */
+.portfolio {
+  width: 1920px;
+  height: 1386px;
+  background-image: url(../src/images/03.png);
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.port-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; }
+
+.port-header h1 {
+  font-size: 50pt;
+  font-family: "Libre Baskerville", sans-serif; }
+
+.port-header p {
+  font-size: 18pt;
+  color: #616161; }
+
+.projects1 .projects2 .projects3 .projects4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */ }
