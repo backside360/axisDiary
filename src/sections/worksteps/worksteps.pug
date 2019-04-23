@@ -12,8 +12,9 @@ section.work-steps
     p We understand your requirement and provide quality works
   .proj
     each item in steps
-      div(class=`${item.className}`)
-        div
-          h4=item.posthead
-          p=item.post
-      img(src=item.url)
+      div.main-steps
+        div(class=`${item.className}`)
+          div
+            h4=item.posthead
+            p=item.post
+        img(src=item.url)

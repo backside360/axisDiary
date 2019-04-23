@@ -1,49 +1,7 @@
 @import "../../commons/variables";
 @import "../../commons/mixins.scss";
 
-
-@mixin pricing-packs($url, $color, $className) {
-  .#{$className} {
-    background-size: contain;
-    background-image: url($url);
-    background-repeat: no-repeat;
-    background-position: center top;
-    width: 116px;
-    height: 116px;
-    @include flex($direction: column, $align: center, $justify: center);
-    color: $color;
-  }
-
-  .#{$className} p {
-    font-family: $text-font;
-    font-size: 11pt;
-    margin-top: -35px;
-  }
-}
-
-.pricing-packs {
-  @include flex-row;
-  justify-content: space-around;
-  margin-top: 85px;
-
-  @include pricing-packs("../src/images/price-green.png", $W100, "pack1");
-  @include pricing-packs("../src/images/price-orange.png", $Y100, "pack2");
-  @include pricing-packs("../src/images/price-purple.png", $P100, "pack3");
-}
-
-.pricing-packs li {
-  line-height: 30px;
-  list-style: none;
-}
-
-.pricing-packs h4 {
-  font-family: $text-font;
-  font-weight: 400;
-  font-size: 20pt;
-  margin-top: 20px;
-}
-
-/*.pricing-table {
+.pricing-table {
   background-color: #f7f7f7;
   background-image: url(../src/images/06.png);
   background-repeat: no-repeat;
@@ -74,24 +32,26 @@
   list-style: none;
 }
 
+.pricing-packs h3 {
+  margin-top: 30px;
+}
+
 .pricing-packs h4 {
   font-family: $text-font;
   font-weight: 400;
   font-size: 20pt;
-  margin-top: 20px;
+  padding-bottom: 45px;
 }
 
 .pack-price1 {
+  margin-top: 30px;
   background-size: contain;
   background-image: url(../src/images/price-green.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;
   height: 116px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex($direction: column);
   color: $W100;
 }
 
@@ -103,15 +63,13 @@
 
 .pack-price2 {
   background-size: contain;
+  margin-top: 30px;
   background-image: url(../src/images/price-orange.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;
   height: 116px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex($direction: column);
   color: $W100;
 }
 
@@ -122,16 +80,14 @@
 }
 
 .pack-price3 {
+  margin-top: 30px;
   background-size: contain;
   background-image: url(../src/images/price-purple.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;
   height: 116px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex($direction: column);
   color: $W100;
 }
 
@@ -225,4 +181,4 @@
   color: $W100;
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
-}*/
+}

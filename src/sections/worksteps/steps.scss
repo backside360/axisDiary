@@ -37,6 +37,19 @@
   font-weight: 400;
 }
 
+.main-steps {
+  @include flex-row;
+}
+
+.proj {
+  margin-top: 50px;
+  @include flex($direction: column);
+}
+
+.proj h4 {
+  padding-left: 50px;
+}
+
 .proj p {
   line-height: 30px;
   padding-left: 50px;
@@ -46,15 +59,15 @@
 }
 
 .proj01 {
+  margin-left: -280px;
+  margin-top: -50px;
+  position: absolute;
   height: 300px;
   width: 460px;
   background-color: $W100;
   box-shadow: $BXS2;
-  /*margin-top: -1300px;*/
-  margin-left: 300px;
-  position: relative;
   @include flex-column;
-  align-items: center;
+  justify-content: center;
   background-image: url(../src/images/01-wstep.png), url(../src/images/line.png);
   background-repeat: no-repeat;
   background-position: left top;
@@ -62,46 +75,49 @@
 }
 
 .proj02 {
+  position: absolute;
+  margin-left: 400px;
+  margin-top: -50px;
   height: 300px;
   width: 460px;
   background-color: $W100;
   box-shadow: $BXS2;
-  margin-left: 1100px;
-  position: relative;
   @include flex-column;
-  align-items: center;
+  justify-content: center;
   background-image: url(../src/images/02-wstep.png), url(../src/images/line.png);
   background-repeat: no-repeat;
   background-position: left top;
-  border-bottom: 3px solid $R100;
+  border-bottom: 3px solid $G400;
 }
 
 .proj03 {
+  margin-left: -280px;
+  margin-top: -50px;
+  position: absolute;
   height: 300px;
   width: 460px;
   background-color: $W100;
   box-shadow: $BXS2;
-  margin-left: 300px;
-  position: relative;
   @include flex-column;
-  align-items: center;
+  justify-content: center;
   background-image: url(../src/images/03-wstep.png), url(../src/images/line.png);
   background-repeat: no-repeat;
   background-position: left top;
-  border-bottom: 3px solid $R100;
+  border-bottom: 3px solid $P100;
 }
 
 .proj04 {
+  position: absolute;
+  margin-left: 400px;
+  margin-top: -50px;
   height: 300px;
   width: 460px;
   background-color: $W100;
   box-shadow: $BXS2;
-  margin-left: 1100px;
-  position: relative;
   @include flex-column;
-  align-items: center;
+  justify-content: center;
   background-image: url(../src/images/04-wstep.png), url(../src/images/line.png);
   background-repeat: no-repeat;
   background-position: left top;
-  border-bottom: 3px solid $R100;
+  border-bottom: 3px solid $Y100;
 }

@@ -7,8 +7,8 @@ header {
 }
 
 .start-nav {
-  @include flex($justify: space-between);
-  width: 1800px;
+  @include flex($justify: space-around);
+  width: 100%;
   margin: auto;
 }
 
