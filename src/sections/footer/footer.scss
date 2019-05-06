@@ -24,6 +24,7 @@ footer {
 
 .f-adress-gl h5 {
   color: $G100;
+  padding-bottom: 20px;
 }
 
 .f-adress-gl p {
@@ -38,6 +39,7 @@ footer {
 
 .f-adress-uk h5 {
   color: $P100;
+  padding-bottom: 20px;
 }
 
 .f-adress-uk p {
@@ -52,8 +54,11 @@ footer {
 
 .f-follow h5 {
   color: $Y100;
-  padding-bottom: 50px;
+  padding-bottom: 37px;
 }
 
 .follow-img {
+  width: 168px;
+  @include flex-row;
+  justify-content: space-between;
 }
