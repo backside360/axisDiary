@@ -22,7 +22,8 @@ footer {
   justify-content: center; }
 
 .f-adress-gl h5 {
-  color: #3aa281; }
+  color: #3aa281;
+  padding-bottom: 20px; }
 
 .f-adress-gl p {
   color: #fff;
@@ -34,7 +35,8 @@ footer {
   justify-content: center; }
 
 .f-adress-uk h5 {
-  color: #b27cf5; }
+  color: #b27cf5;
+  padding-bottom: 20px; }
 
 .f-adress-uk p {
   color: #fff;
@@ -47,4 +49,10 @@ footer {
 
 .f-follow h5 {
   color: #feb960;
-  padding-bottom: 50px; }
+  padding-bottom: 37px; }
+
+.follow-img {
+  width: 168px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
