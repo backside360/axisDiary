@@ -5,10 +5,10 @@
   @include flex($direction: column);
   background-image: url(../src/images/1920.png);
   background-size: cover;
+  height: 100%;
   color: $W100;
   padding: 100px 0;
 }
-
 
 .main-layout h1 {
   font-family: $header-font;
@@ -27,7 +27,6 @@
   cursor: pointer;
   outline: none;
 }
-
 
 .items {
   margin-top: 50px;
