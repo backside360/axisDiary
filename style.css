@@ -67,7 +67,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../src/images/1920.png);
+  background-image: url(./images/1920.png);
   background-size: cover;
   height: 100%;
   color: #fff;
@@ -139,7 +139,7 @@ header {
   margin-left: -70px;
   margin-top: 80px;
   font-size: 40pt;
-  background-image: url(../images/01.png);
+  background-image: url(./images/01.png);
   background-repeat: no-repeat;
   background-position: left top;
   border-bottom: 3px solid #fc5f45;
@@ -166,7 +166,7 @@ header {
   width: 100%;
   height: 820px;
   background-color: #f7f7f7;
-  background-image: url(../images/02.png);
+  background-image: url(./images/02.png);
   background-repeat: no-repeat;
   background-position: center top; }
 
@@ -252,7 +252,7 @@ header {
 .video {
   width: 100%;
   height: 500px;
-  background-image: url(../src/images/1920-500.png); }
+  background-image: url(./images/1920-500.png); }
 
 .video-1 {
   color: #fff;
@@ -272,7 +272,7 @@ header {
 .portfolio {
   width: 100%;
   height: 1386px;
-  background-image: url(../src/images/03.png);
+  background-image: url(./images/03.png);
   background-repeat: no-repeat;
   background-position: center top; }
 
@@ -304,7 +304,7 @@ header {
 .our-team {
   width: 100%;
   height: 1386px;
-  background-image: url(../src/images/04.png);
+  background-image: url(./images/04.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #f7f7f7; }
@@ -417,7 +417,7 @@ header {
 /*      SHADOWS     */
 .results {
   height: 464px;
-  background-image: url(../src/images/coffee.png);
+  background-image: url(./images/coffee.png);
   background-repeat: no-repeat; }
 
 .metrics {
@@ -449,7 +449,7 @@ header {
 /*      SHADOWS     */
 .work-steps {
   height: 1720px;
-  background-image: url(../src/images/05.png);
+  background-image: url(./images/05.png);
   background-repeat: no-repeat;
   background-position: center top; }
 
@@ -569,7 +569,7 @@ header {
 /*      SHADOWS     */
 .pricing-table {
   background-color: #f7f7f7;
-  background-image: url(../src/images/06.png);
+  background-image: url(/images/06.png);
   background-repeat: no-repeat;
   background-position: center top;
   height: 1050px; }
@@ -606,7 +606,7 @@ header {
 .pack-price1 {
   margin-top: 30px;
   background-size: contain;
-  background-image: url(../src/images/price-green.png);
+  background-image: url(./images/price-green.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;
@@ -625,7 +625,7 @@ header {
 .pack-price2 {
   background-size: contain;
   margin-top: 30px;
-  background-image: url(../src/images/price-orange.png);
+  background-image: url(./images/price-orange.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;
@@ -644,7 +644,7 @@ header {
 .pack-price3 {
   margin-top: 30px;
   background-size: contain;
-  background-image: url(../src/images/price-purple.png);
+  background-image: url(./images/price-purple.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;
@@ -742,7 +742,7 @@ header {
 /*      SHADOWS     */
 .testimonials {
   background-color: #3f4049;
-  background-image: url(../src/images/07.png);
+  background-image: url(./images/07.png);
   background-repeat: no-repeat;
   background-position: center top;
   color: #fff;
@@ -769,7 +769,7 @@ header {
 .main-text {
   background-color: #fff;
   color: #616161;
-  background-image: url(../src/images/quotes.png);
+  background-image: url(./images/quotes.png);
   background-repeat: no-repeat;
   background-position: left top;
   width: 755px;
@@ -788,7 +788,7 @@ header {
 .select-us {
   height: 1050px;
   width: 100%;
-  background-image: url(../src/images/08.png);
+  background-image: url(./images/08.png);
   background-repeat: no-repeat;
   background-position: center top; }
 
@@ -873,7 +873,7 @@ header {
 /*      SHADOWS     */
 .our-blog {
   background-color: #f7f7f7;
-  background-image: url(../src/images/09.png);
+  background-image: url(./images/09.png);
   background-repeat: no-repeat;
   background-position: center top;
   height: 1150px; }
@@ -910,7 +910,7 @@ header {
   margin-right: 20px; }
 
 .blog-main-header {
-  background-image: url("./src/images/555x443.png");
+  background-image: url(./images/555x443.png);
   background-size: contain;
   height: 443px;
   width: 100%;
@@ -1078,7 +1078,7 @@ header {
 /*      SHADOWS     */
 .in-touch {
   height: 1300px;
-  background-image: url(../src/images/10.png);
+  background-image: url(./images/10.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #cccccc; }

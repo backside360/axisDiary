@@ -3,7 +3,7 @@
 /*      SHADOWS     */
 .pricing-table {
   background-color: #f7f7f7;
-  background-image: url(../src/images/06.png);
+  background-image: url(/images/06.png);
   background-repeat: no-repeat;
   background-position: center top;
   height: 1050px; }
@@ -40,7 +40,7 @@
 .pack-price1 {
   margin-top: 30px;
   background-size: contain;
-  background-image: url(../src/images/price-green.png);
+  background-image: url(./images/price-green.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;
@@ -59,7 +59,7 @@
 .pack-price2 {
   background-size: contain;
   margin-top: 30px;
-  background-image: url(../src/images/price-orange.png);
+  background-image: url(./images/price-orange.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;
@@ -78,7 +78,7 @@
 .pack-price3 {
   margin-top: 30px;
   background-size: contain;
-  background-image: url(../src/images/price-purple.png);
+  background-image: url(./images/price-purple.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 116px;

@@ -3,7 +3,7 @@
 /*      SHADOWS     */
 .our-blog {
   background-color: #f7f7f7;
-  background-image: url(../src/images/09.png);
+  background-image: url(./images/09.png);
   background-repeat: no-repeat;
   background-position: center top;
   height: 1150px; }
@@ -40,7 +40,7 @@
   margin-right: 20px; }
 
 .blog-main-header {
-  background-image: url("./src/images/555x443.png");
+  background-image: url(./images/555x443.png);
   background-size: contain;
   height: 443px;
   width: 100%;

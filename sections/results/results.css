@@ -3,7 +3,7 @@
 /*      SHADOWS     */
 .results {
   height: 464px;
-  background-image: url(../src/images/coffee.png);
+  background-image: url(./images/coffee.png);
   background-repeat: no-repeat; }
 
 .metrics {

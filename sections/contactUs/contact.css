@@ -3,7 +3,7 @@
 /*      SHADOWS     */
 .in-touch {
   height: 1300px;
-  background-image: url(../src/images/10.png);
+  background-image: url(./images/10.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #cccccc; }

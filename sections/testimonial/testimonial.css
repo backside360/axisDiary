@@ -3,7 +3,7 @@
 /*      SHADOWS     */
 .testimonials {
   background-color: #3f4049;
-  background-image: url(../src/images/07.png);
+  background-image: url(./images/07.png);
   background-repeat: no-repeat;
   background-position: center top;
   color: #fff;
@@ -30,7 +30,7 @@
 .main-text {
   background-color: #fff;
   color: #616161;
-  background-image: url(../src/images/quotes.png);
+  background-image: url(./images/quotes.png);
   background-repeat: no-repeat;
   background-position: left top;
   width: 755px;

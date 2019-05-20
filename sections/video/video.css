@@ -4,7 +4,7 @@
 .video {
   width: 100%;
   height: 500px;
-  background-image: url(../src/images/1920-500.png); }
+  background-image: url(./images/1920-500.png); }
 
 .video-1 {
   color: #fff;
